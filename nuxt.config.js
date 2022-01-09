@@ -1,5 +1,7 @@
 import colors from 'vuetify/es5/util/colors';
 
+// nuxt generate error https://github.com/nuxt/nuxt.js/issues/9185
+
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
