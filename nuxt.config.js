@@ -12,7 +12,7 @@ export default {
         titleTemplate: '%s - marketplace',
         title: 'marketplace',
         htmlAttrs: {
-            lang: 'en',
+            lang: 'ru',
         },
         meta: [
             { charset: 'utf-8' },
@@ -24,7 +24,7 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
+    css: ['@mdi/font/css/materialdesignicons.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
@@ -57,7 +57,7 @@ export default {
     vuetify: {
         customVariables: ['~/assets/variables.scss'],
         theme: {
-            dark: true,
+            dark: false,
             themes: {
                 dark: {
                     primary: colors.blue.darken2,
@@ -67,8 +67,22 @@ export default {
                     warning: colors.amber.base,
                     error: colors.deepOrange.accent4,
                     success: colors.green.accent3,
+                    background: colors.grey.darken4,
+                },
+                light: {
+                    primary: colors.blue.lighten2,
+                    accent: colors.grey.lighten3,
+                    secondary: colors.amber.lighten3,
+                    info: colors.teal.darken1,
+                    warning: colors.amber.base,
+                    error: colors.deepOrange.accent4,
+                    success: colors.green.accent3,
+                    background: colors.grey.lighten4,
                 },
             },
+        },
+        icons: {
+            iconfont: 'mdi',
         },
     },
 
