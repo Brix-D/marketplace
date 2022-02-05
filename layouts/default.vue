@@ -1,11 +1,17 @@
 <template>
-    <v-app dark>
-        <v-app-bar flat height="100" :color="$vuetify.theme.currentTheme.background">
+    <v-app dark class="application__background">
+        <v-app-bar
+            flat
+            app
+            absolute
+            height="100"
+            :color="$vuetify.theme.currentTheme.backgroundSecondary"
+        >
             <v-container>
                 <v-row align="center">
                     <v-col cols="3">
                         <h1
-                            :style="`color: ${$vuetify.theme.currentTheme.primary};`"
+                            :style="{ color: $vuetify.theme.currentTheme.info }"
                             class="text-h3 font-italic font-weight-bold"
                         >
                             Servey
@@ -19,6 +25,7 @@
                             outlined
                             label="Найти..."
                             clearable
+                            :color="$vuetify.theme.currentTheme.info"
                         />
                     </v-col>
                     <v-col cols="3">s</v-col>
@@ -40,7 +47,7 @@
         <!--                </v-list-item>-->
         <!--            </v-list>-->
         <!--        </v-navigation-drawer>-->
-        <v-footer :absolute="!fixed" app>
+        <v-footer app absolute>
             <span>&copy; {{ new Date().getFullYear() }}</span>
         </v-footer>
     </v-app>
@@ -81,4 +88,9 @@ export default {
 //
 //    }
 //}
+.application {
+    &__background {
+        background-color: var(--v-background-base);
+    }
+}
 </style>

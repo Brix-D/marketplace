@@ -49,7 +49,7 @@ export default {
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-        baseURL: 'http://localhost/api/',
+        baseURL: 'http://rest-api/api',
         debug: true,
     },
 
@@ -60,25 +60,30 @@ export default {
             dark: false,
             themes: {
                 dark: {
-                    primary: colors.blue.darken2,
-                    accent: colors.grey.darken3,
-                    secondary: colors.amber.darken3,
-                    info: colors.teal.lighten1,
+                    primary: colors.indigo.lighten5,
+                    accent: colors.deepPurple.lighten1,
+                    secondary: colors.grey.lighten3,
+                    info: colors.blue.lighten1,
                     warning: colors.amber.base,
                     error: colors.deepOrange.accent4,
-                    success: colors.green.accent3,
-                    background: colors.grey.darken4,
+                    success: colors.green.base,
+                    backgroundSecondary: colors.grey.darken4,
+                    background: colors.grey.darken3,
                 },
                 light: {
-                    primary: colors.blue.lighten2,
-                    accent: colors.grey.lighten3,
-                    secondary: colors.amber.lighten3,
-                    info: colors.teal.darken1,
+                    primary: colors.grey.darken4,
+                    accent: colors.deepPurple.lighten1,
+                    secondary: colors.blueGrey.lighten3,
+                    info: colors.blue.darken2,
                     warning: colors.amber.base,
                     error: colors.deepOrange.accent4,
-                    success: colors.green.accent3,
+                    success: colors.green.base,
+                    backgroundSecondary: colors.indigo.lighten5,
                     background: colors.grey.lighten4,
                 },
+            },
+            options: {
+                customProperties: true,
             },
         },
         icons: {
