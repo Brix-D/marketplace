@@ -10,12 +10,14 @@
             <v-container>
                 <v-row align="center">
                     <v-col cols="3">
-                        <h1
-                            :style="{ color: $vuetify.theme.currentTheme.info }"
-                            class="text-h3 font-italic font-weight-bold"
-                        >
-                            Servey
-                        </h1>
+                        <NuxtLink :to="{ name: '' }">
+                            <h1
+                                :style="{ color: $vuetify.theme.currentTheme.info }"
+                                class="text-h3 font-italic font-weight-bold"
+                            >
+                                Servey
+                            </h1>
+                        </NuxtLink>
                     </v-col>
                     <v-col cols="6">
                         <v-text-field
