@@ -1,5 +1,5 @@
 <template>
-    <div class="slider" />
+    <div class="stub" />
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.slider {
-    background-color: $color-background-secondary;
+.stub {
+    min-height: 1000px;
 }
 </style>

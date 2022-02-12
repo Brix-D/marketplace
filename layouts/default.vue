@@ -1,39 +1,6 @@
 <template>
     <v-app dark class="application__background">
-        <v-app-bar
-            flat
-            app
-            absolute
-            height="100"
-            :color="$vuetify.theme.currentTheme.backgroundSecondary"
-        >
-            <v-container>
-                <v-row align="center">
-                    <v-col cols="3">
-                        <NuxtLink :to="{ name: 'index' }">
-                            <h1
-                                :style="{ color: $vuetify.theme.currentTheme.info }"
-                                class="text-h3 font-italic font-weight-bold"
-                            >
-                                Servey
-                            </h1>
-                        </NuxtLink>
-                    </v-col>
-                    <v-col cols="6">
-                        <v-text-field
-                            v-model="searchValue"
-                            prepend-inner-icon="mdi-magnify"
-                            hide-details
-                            outlined
-                            label="Найти..."
-                            clearable
-                            :color="$vuetify.theme.currentTheme.info"
-                        />
-                    </v-col>
-                    <v-col cols="3">s</v-col>
-                </v-row>
-            </v-container>
-        </v-app-bar>
+        <TheHeader />
         <v-main>
             <v-container>
                 <Nuxt />
@@ -56,31 +23,14 @@
 </template>
 
 <script>
+import TheHeader from '@/components/layout/TheHeader';
 export default {
     name: 'DefaultLayout',
+    components: {
+        TheHeader,
+    },
     data() {
-        return {
-            // clipped: false,
-            // drawer: false,
-            // fixed: false,
-            // items: [
-            //     {
-            //         icon: 'mdi-apps',
-            //         title: 'Welcome',
-            //         to: '/',
-            //     },
-            //     {
-            //         icon: 'mdi-chart-bubble',
-            //         title: 'Inspire',
-            //         to: '/inspire',
-            //     },
-            // ],
-            // miniVariant: false,
-            // right: true,
-            // rightDrawer: false,
-            // title: 'Vuetify.js',
-            searchValue: '',
-        };
+        return {};
     },
 };
 </script>
