@@ -28,8 +28,8 @@ export default {
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
         // '~/assets/scss/_variables.scss',
-        '@mdi/font/css/materialdesignicons.css',
         '~/assets/scss/_normalize.scss',
+        '@mdi/font/css/materialdesignicons.css',
         '~/assets/scss/_common.scss',
     ],
 
