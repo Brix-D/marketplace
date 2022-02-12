@@ -10,7 +10,7 @@
             <v-container>
                 <v-row align="center">
                     <v-col cols="3">
-                        <NuxtLink :to="{ name: '' }">
+                        <NuxtLink :to="{ name: 'index' }">
                             <h1
                                 :style="{ color: $vuetify.theme.currentTheme.info }"
                                 class="text-h3 font-italic font-weight-bold"
